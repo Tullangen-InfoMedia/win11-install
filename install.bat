@@ -1,0 +1,1 @@
+setup.exe /auto upgrade /compat ignorewarning /dynamicupdate disable /showoobe none /eula accept /quiet /noreboot
