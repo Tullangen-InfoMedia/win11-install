@@ -12,4 +12,4 @@ skipTPM.bat
 timeout 8
 
 start Win11.iso
-E:\setup.exe /auto upgrade /dynamicupdate enable /showoobe none /eula accept
+E:\setup.exe /auto upgrade /dynamicupdate enable /showoobe none /eula accept /copylogs C:\Win11Temp\win11.log
