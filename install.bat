@@ -1,5 +1,12 @@
 @echo off
 
+if %ERRORLEVEL% equ 0 (
+    echo Running as Administrator
+) else (
+    echo You are NOT Administrator. Exiting...
+    EXIT /B 1
+)
+
 cd /d "%~dp0"
 
 if not exist Win11.iso (
