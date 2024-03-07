@@ -1,4 +1,6 @@
-cd /d %root%
+@echo off
+
+cd /d "%~dp0"
 
 if not exist Win11.iso (
 	echo "Downloading ISO"
