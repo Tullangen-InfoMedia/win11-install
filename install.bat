@@ -30,6 +30,6 @@ echo Waiting for mount
 timeout 8
 
 echo Starting setup
-E:\setup.exe /auto upgrade /dynamicupdate enable /showoobe none /eula accept /copylogs C:\Win11Temp\win11.log
+start /b E:\setup.exe /auto upgrade /dynamicupdate enable /showoobe none /eula accept /copylogs C:\Win11Temp
 
 pause
