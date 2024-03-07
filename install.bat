@@ -18,7 +18,7 @@ reg add HKEY_LOCAL_MACHINE\SYSTEM\Setup\MoSetup
 reg add HKEY_LOCAL_MACHINE\SYSTEM\Setup\MoSetup /v AllowUpgradesWithUnsupportedTPMOrCPU /t REG_DWORD /d 1
 
 echo Bypassing TPM requirement
-skipTPM.bat
+start skipTPM.bat
 
 echo Waiting
 timeout 8
@@ -28,3 +28,5 @@ start Win11.iso
 
 echo Starting setup
 E:\setup.exe /auto upgrade /dynamicupdate enable /showoobe none /eula accept /copylogs C:\Win11Temp\win11.log
+
+pause
