@@ -16,13 +16,13 @@ if not exist Win11.iso (
 	echo ISO already exists, using existing
 )
 
-echo Setting registry keys
-reg add HKEY_LOCAL_MACHINE\SYSTEM\Setup\LabConfig
-reg add HKEY_LOCAL_MACHINE\SYSTEM\Setup\LabConfig /v BypassTPMCheck /t REG_DWORD /d 1
-reg add HKEY_LOCAL_MACHINE\SYSTEM\Setup\LabConfig /v BypassSecureBootCheck /t REG_DWORD /d 1
+rem echo Setting registry keys
+rem reg add HKEY_LOCAL_MACHINE\SYSTEM\Setup\LabConfig
+rem reg add HKEY_LOCAL_MACHINE\SYSTEM\Setup\LabConfig /v BypassTPMCheck /t REG_DWORD /d 1
+rem reg add HKEY_LOCAL_MACHINE\SYSTEM\Setup\LabConfig /v BypassSecureBootCheck /t REG_DWORD /d 1
 
-reg add HKEY_LOCAL_MACHINE\SYSTEM\Setup\MoSetup
-reg add HKEY_LOCAL_MACHINE\SYSTEM\Setup\MoSetup /v AllowUpgradesWithUnsupportedTPMOrCPU /t REG_DWORD /d 1
+rem reg add HKEY_LOCAL_MACHINE\SYSTEM\Setup\MoSetup
+rem reg add HKEY_LOCAL_MACHINE\SYSTEM\Setup\MoSetup /v AllowUpgradesWithUnsupportedTPMOrCPU /t REG_DWORD /d 1
 
 rem echo Bypassing TPM requirement
 rem start skipTPM.bat
