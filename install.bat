@@ -24,11 +24,11 @@ reg add HKEY_LOCAL_MACHINE\SYSTEM\Setup\LabConfig /v BypassSecureBootCheck /t RE
 reg add HKEY_LOCAL_MACHINE\SYSTEM\Setup\MoSetup
 reg add HKEY_LOCAL_MACHINE\SYSTEM\Setup\MoSetup /v AllowUpgradesWithUnsupportedTPMOrCPU /t REG_DWORD /d 1
 
-echo Bypassing TPM requirement
-start skipTPM.bat
+rem echo Bypassing TPM requirement
+rem start skipTPM.bat
 
-echo Waiting
-timeout 8
+rem echo Waiting
+rem timeout 8
 
 echo Mounting ISO
 start Win11.iso
