@@ -1,0 +1,1 @@
+Start-Process cmd.exe -NoNewWindow -Wait -ArgumentList "/k SkipTPM.cmd && exit"
